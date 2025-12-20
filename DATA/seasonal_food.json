@@ -1,0 +1,146 @@
+{
+  "1": {
+    "fruits": {
+      "ca": "Taronja, Mandarina, Kiwi, Poma, Pera",
+      "es": "Naranja, Mandarina, Kiwi, Manzana, Pera",
+      "en": "Orange, Tangerine, Kiwi, Apple, Pear"
+    },
+    "vegetables": {
+      "ca": "Col, Bròquil, Coliflor, Espinacs, Porros, Carxofa, Nap",
+      "es": "Col, Brócoli, Coliflor, Espinacas, Puerros, Alcachofa, Nabo",
+      "en": "Cabbage, Broccoli, Cauliflower, Spinach, Leeks, Artichoke, Turnip"
+    }
+  },
+  "2": {
+    "fruits": {
+      "ca": "Taronja, Mandarina, Kiwi, Poma, Pera, Maduixa",
+      "es": "Naranja, Mandarina, Kiwi, Manzana, Pera, Fresa",
+      "en": "Orange, Tangerine, Kiwi, Apple, Pear, Strawberry"
+    },
+    "vegetables": {
+      "ca": "Col, Bròquil, Coliflor, Espinacs, Carxofa, Api, Faves",
+      "es": "Col, Brócoli, Coliflor, Espinacas, Alcachofa, Apio, Habas",
+      "en": "Cabbage, Broccoli, Cauliflower, Spinach, Artichoke, Celery, Broad beans"
+    }
+  },
+  "3": {
+    "fruits": {
+      "ca": "Maduixa, Taronja, Kiwi, Poma, Nespra",
+      "es": "Fresa, Naranja, Kiwi, Manzana, Níspero",
+      "en": "Strawberry, Orange, Kiwi, Apple, Loquat"
+    },
+    "vegetables": {
+      "ca": "Espàrrec, Carxofa, Espinacs, Enciam, Faves, Pèsols",
+      "es": "Espárrago, Alcachofa, Espinacas, Lechuga, Habas, Guisantes",
+      "en": "Asparagus, Artichoke, Spinach, Lettuce, Broad beans, Peas"
+    }
+  },
+  "4": {
+    "fruits": {
+      "ca": "Maduixa, Cirera, Nespra, Albercoc",
+      "es": "Fresa, Cereza, Níspero, Albaricoque",
+      "en": "Strawberry, Cherry, Loquat, Apricot"
+    },
+    "vegetables": {
+      "ca": "Espàrrec, Carxofa, Faves, Pèsols, Enciam, Espinacs",
+      "es": "Espárrago, Alcachofa, Habas, Guisantes, Lechuga, Espinacas",
+      "en": "Asparagus, Artichoke, Broad beans, Peas, Lettuce, Spinach"
+    }
+  },
+  "5": {
+    "fruits": {
+      "ca": "Cirera, Maduixa, Albercoc, Nespra, Nectarina",
+      "es": "Cereza, Fresa, Albaricoque, Níspero, Nectarina",
+      "en": "Cherry, Strawberry, Apricot, Loquat, Nectarine"
+    },
+    "vegetables": {
+      "ca": "Tomàquet, Carbassó, Mongeta tendra, Pebrot, Enciam",
+      "es": "Tomate, Calabacín, Judía verde, Pimiento, Lechuga",
+      "en": "Tomato, Zucchini, Green bean, Pepper, Lettuce"
+    }
+  },
+  "6": {
+    "fruits": {
+      "ca": "Cirera, Albercoc, Préssec, Nectarina, Síndria, Meló",
+      "es": "Cereza, Albaricoque, Melocotón, Nectarina, Sandía, Melón",
+      "en": "Cherry, Apricot, Peach, Nectarine, Watermelon, Melon"
+    },
+    "vegetables": {
+      "ca": "Tomàquet, Carbassó, Albergínia, Pebrot, Cogombre",
+      "es": "Tomate, Calabacín, Berenjena, Pimiento, Pepino",
+      "en": "Tomato, Zucchini, Eggplant, Pepper, Cucumber"
+    }
+  },
+  "7": {
+    "fruits": {
+      "ca": "Síndria, Meló, Préssec, Nectarina, Pruna, Figa",
+      "es": "Sandía, Melón, Melocotón, Nectarina, Ciruela, Higo",
+      "en": "Watermelon, Melon, Peach, Nectarine, Plum, Fig"
+    },
+    "vegetables": {
+      "ca": "Tomàquet, Carbassó, Albergínia, Pebrot, Cogombre",
+      "es": "Tomate, Calabacín, Berenjena, Pimiento, Pepino",
+      "en": "Tomato, Zucchini, Eggplant, Pepper, Cucumber"
+    }
+  },
+  "8": {
+    "fruits": {
+      "ca": "Síndria, Meló, Préssec, Raïm, Figa, Pera",
+      "es": "Sandía, Melón, Melocotón, Uva, Higo, Pera",
+      "en": "Watermelon, Melon, Peach, Grape, Fig, Pear"
+    },
+    "vegetables": {
+      "ca": "Tomàquet, Carbassó, Albergínia, Pebrot, Cogombre, Ceba",
+      "es": "Tomate, Calabacín, Berenjena, Pimiento, Pepino, Cebolla",
+      "en": "Tomato, Zucchini, Eggplant, Pepper, Cucumber, Onion"
+    }
+  },
+  "9": {
+    "fruits": {
+      "ca": "Raïm, Figa, Pera, Poma, Pruna",
+      "es": "Uva, Higo, Pera, Manzana, Ciruela",
+      "en": "Grape, Fig, Pear, Apple, Plum"
+    },
+    "vegetables": {
+      "ca": "Tomàquet, Carbassó, Albergínia, Pebrot, Bolets, Col",
+      "es": "Tomate, Calabacín, Berenjena, Pimiento, Setas, Col",
+      "en": "Tomato, Zucchini, Eggplant, Pepper, Mushrooms, Cabbage"
+    }
+  },
+  "10": {
+    "fruits": {
+      "ca": "Raïm, Poma, Pera, Codony, Magrana, Castanya",
+      "es": "Uva, Manzana, Pera, Membrillo, Granada, Castaña",
+      "en": "Grape, Apple, Pear, Quince, Pomegranate, Chestnut"
+    },
+    "vegetables": {
+      "ca": "Carbassa, Bolets, Col, Bròquil, Espinacs, Nap",
+      "es": "Calabaza, Setas, Col, Brócoli, Espinacas, Nabo",
+      "en": "Pumpkin, Mushrooms, Cabbage, Broccoli, Spinach, Turnip"
+    }
+  },
+  "11": {
+    "fruits": {
+      "ca": "Poma, Pera, Codony, Magrana, Castanya, Kiwi",
+      "es": "Manzana, Pera, Membrillo, Granada, Castaña, Kiwi",
+      "en": "Apple, Pear, Quince, Pomegranate, Chestnut, Kiwi"
+    },
+    "vegetables": {
+      "ca": "Carbassa, Col, Bròquil, Coliflor, Espinacs, Porros, Carxofa",
+      "es": "Calabaza, Col, Brócoli, Coliflor, Espinacas, Puerros, Alcachofa",
+      "en": "Pumpkin, Cabbage, Broccoli, Cauliflower, Spinach, Leeks, Artichoke"
+    }
+  },
+  "12": {
+    "fruits": {
+      "ca": "Taronja, Mandarina, Kiwi, Poma, Pera",
+      "es": "Naranja, Mandarina, Kiwi, Manzana, Pera",
+      "en": "Orange, Tangerine, Kiwi, Apple, Pear"
+    },
+    "vegetables": {
+      "ca": "Col, Bròquil, Coliflor, Espinacs, Porros, Carxofa, Api",
+      "es": "Col, Brócoli, Coliflor, Espinacas, Puerros, Alcachofa, Apio",
+      "en": "Cabbage, Broccoli, Cauliflower, Spinach, Leeks, Artichoke, Celery"
+    }
+  }
+}

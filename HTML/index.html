@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ca" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calendar</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <h1 class="app-title">My Calendar</h1>
+                <button id="todayBtn" class="btn btn-today" data-i18n="today">Avui</button>
+                <div class="nav-arrows">
+                    <button id="prevBtn" class="btn btn-nav">&#10094;</button>
+                    <button id="nextBtn" class="btn btn-nav">&#10095;</button>
+                </div>
+                <span id="currentPeriod" class="current-period"></span>
+            </div>
+            <div class="header-right">
+                <div class="view-buttons">
+                    <button id="monthViewBtn" class="btn btn-view active" data-i18n="month">Mes</button>
+                    <button id="weekViewBtn" class="btn btn-view" data-i18n="week">Setmana</button>
+                    <button id="yearViewBtn" class="btn btn-view" data-i18n="year">Any</button>
+                </div>
+                <div class="settings">
+                    <select id="languageSelect" class="select-control">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="ca" selected>Català</option>
+                    </select>
+                    <select id="themeSelect" class="select-control">
+                        <option value="light" data-i18n="light">Clar</option>
+                        <option value="dark" data-i18n="dark" selected>Fosc</option>
+                        <option value="system" data-i18n="system">Sistema</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <!-- Info Panel - Row 1 -->
+        <div class="info-panel">
+            <!-- Date Info Card -->
+            <div class="info-card date-info">
+                <div class="date-info-left">
+                    <div id="dayName" class="day-name"></div>
+                    <div id="dayNumber" class="day-number"></div>
+                    <div id="monthYearDisplay" class="month-year"></div>
+                    <div id="dayOfYear" class="day-of-year"></div>
+                </div>
+                <div class="week-number-display">
+                    <span id="weekNumberValue" class="week-number-value">01</span>
+                    <span id="weekNumberLabel" class="week-number-label" data-i18n="weekLabel">Setmana</span>
+                </div>
+            </div>
+
+            <!-- Time Info Card -->
+            <div class="info-card time-info-new">
+                <div class="time-column">
+                    <span class="time-icon">🕐</span>
+                    <div class="time-data">
+                        <span class="time-city-label">Barcelona</span>
+                        <span id="localTime" class="time-value-new">--:--:--</span>
+                    </div>
+                </div>
+                <div class="time-divider"></div>
+                <div class="time-column">
+                    <span class="time-icon">🌍</span>
+                    <div class="time-data">
+                        <span id="worldCityName" class="time-city-label">New York</span>
+                        <span id="worldTime" class="time-value-new">--:--:--</span>
+                    </div>
+                </div>
+                <div class="time-divider"></div>
+                <div class="time-column time-selector">
+                    <span class="city-select-label" data-i18n="selectCity">Selecciona ciutat</span>
+                    <select id="worldCitySelect" class="select-control city-select-compact">
+                        <optgroup label="🌍 Europe">
+                            <option value="Europe/London">London</option>
+                            <option value="Europe/Paris">Paris</option>
+                            <option value="Europe/Madrid">Madrid</option>
+                            <option value="Europe/Rome">Rome</option>
+                            <option value="Europe/Berlin">Berlin</option>
+                            <option value="Europe/Amsterdam">Amsterdam</option>
+                            <option value="Europe/Brussels">Brussels</option>
+                            <option value="Europe/Vienna">Vienna</option>
+                            <option value="Europe/Zurich">Zurich</option>
+                            <option value="Europe/Stockholm">Stockholm</option>
+                            <option value="Europe/Athens">Athens</option>
+                            <option value="Europe/Moscow">Moscow</option>
+                        </optgroup>
+                        <optgroup label="🌎 North America">
+                            <option value="America/New_York" selected>New York</option>
+                            <option value="America/Los_Angeles">Los Angeles</option>
+                            <option value="America/Chicago">Chicago</option>
+                            <option value="America/Toronto">Toronto</option>
+                            <option value="America/Mexico_City">Mexico City</option>
+                            <option value="America/New_York">Miami</option>
+                            <option value="America/Vancouver">Vancouver</option>
+                            <option value="America/Chicago">Houston</option>
+                            <option value="America/Phoenix">Phoenix</option>
+                            <option value="America/Montreal">Montreal</option>
+                        </optgroup>
+                        <optgroup label="🌎 South America">
+                            <option value="America/Argentina/Buenos_Aires">Buenos Aires</option>
+                            <option value="America/Sao_Paulo">São Paulo</option>
+                            <option value="America/Sao_Paulo">Rio de Janeiro</option>
+                            <option value="America/Lima">Lima</option>
+                            <option value="America/Bogota">Bogotá</option>
+                            <option value="America/Santiago">Santiago</option>
+                            <option value="America/Caracas">Caracas</option>
+                            <option value="America/Montevideo">Montevideo</option>
+                        </optgroup>
+                        <optgroup label="🌏 Asia">
+                            <option value="Asia/Tokyo">Tokyo</option>
+                            <option value="Asia/Shanghai">Beijing</option>
+                            <option value="Asia/Shanghai">Shanghai</option>
+                            <option value="Asia/Hong_Kong">Hong Kong</option>
+                            <option value="Asia/Singapore">Singapore</option>
+                            <option value="Asia/Seoul">Seoul</option>
+                            <option value="Asia/Bangkok">Bangkok</option>
+                            <option value="Asia/Kolkata">Mumbai</option>
+                            <option value="Asia/Kolkata">Delhi</option>
+                            <option value="Asia/Dubai">Dubai</option>
+                            <option value="Asia/Jerusalem">Tel Aviv</option>
+                            <option value="Asia/Jakarta">Jakarta</option>
+                            <option value="Asia/Manila">Manila</option>
+                            <option value="Asia/Kuala_Lumpur">Kuala Lumpur</option>
+                            <option value="Asia/Taipei">Taipei</option>
+                        </optgroup>
+                        <optgroup label="🌏 Oceania">
+                            <option value="Australia/Sydney">Sydney</option>
+                            <option value="Australia/Melbourne">Melbourne</option>
+                            <option value="Pacific/Auckland">Auckland</option>
+                            <option value="Australia/Perth">Perth</option>
+                            <option value="Australia/Brisbane">Brisbane</option>
+                        </optgroup>
+                        <optgroup label="🌍 Africa">
+                            <option value="Africa/Cairo">Cairo</option>
+                            <option value="Africa/Johannesburg">Johannesburg</option>
+                            <option value="Africa/Lagos">Lagos</option>
+                            <option value="Africa/Nairobi">Nairobi</option>
+                            <option value="Africa/Casablanca">Casablanca</option>
+                            <option value="Africa/Johannesburg">Cape Town</option>
+                            <option value="Africa/Algiers">Algiers</option>
+                            <option value="Africa/Tunis">Tunis</option>
+                            <option value="Africa/Accra">Accra</option>
+                            <option value="Africa/Addis_Ababa">Addis Ababa</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Celestial Info Card (Sun + Moon Combined) -->
+            <div class="info-card celestial-info">
+                <div class="celestial-top">
+                    <div class="celestial-column sun-column">
+                        <div class="celestial-item">
+                            <img src="../IMG/sunrise.png" alt="Sunrise" class="celestial-icon">
+                            <div class="celestial-details">
+                                <span class="celestial-label" data-i18n="sunrise">Sortida del sol</span>
+                                <span id="sunriseTime" class="celestial-time">--:--</span>
+                            </div>
+                        </div>
+                        <div class="celestial-item">
+                            <img src="../IMG/sunset.png" alt="Sunset" class="celestial-icon">
+                            <div class="celestial-details">
+                                <span class="celestial-label" data-i18n="sunset">Posta del sol</span>
+                                <span id="sunsetTime" class="celestial-time">--:--</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="celestial-divider-vertical"></div>
+                    <div class="celestial-column moon-column">
+                        <div class="celestial-item">
+                            <img src="../IMG/moon-rise.png" alt="Moonrise" class="celestial-icon">
+                            <div class="celestial-details">
+                                <span class="celestial-label" data-i18n="moonrise">Sortida de lluna</span>
+                                <span id="moonriseTime" class="celestial-time">--:--</span>
+                            </div>
+                        </div>
+                        <div class="celestial-item">
+                            <img src="../IMG/moon-set.png" alt="Moonset" class="celestial-icon">
+                            <div class="celestial-details">
+                                <span class="celestial-label" data-i18n="moonset">Posta de lluna</span>
+                                <span id="moonsetTime" class="celestial-time">--:--</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="celestial-divider-horizontal"></div>
+                <div class="celestial-bottom">
+                    <img id="moonImage" src="../IMG/full-moon.png" alt="Moon Phase" class="moon-icon-large">
+                    <div class="moon-phase-info">
+                        <span id="moonPhaseName" class="moon-phase-name">Lluna Plena</span>
+                        <span id="moonPhaseDesc" class="moon-phase-desc">Cara completament il·luminada</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Panel - Row 2 -->
+        <div class="info-panel info-panel-row2">
+            <!-- Season | Fruits | Vegetables Card -->
+            <div class="info-card season-food-info">
+                <div class="sf-col sf-season">
+                    <img id="seasonImage" src="../IMG/spring.png" alt="Current Season" class="season-icon-medium">
+                    <div class="sf-text">
+                        <span class="sf-title" data-i18n="season">Season</span>
+                        <span id="seasonName" class="sf-value">Primavera</span>
+                    </div>
+                </div>
+                <div class="sf-divider"></div>
+                <div class="sf-col">
+                    <span class="sf-emoji">🍎</span>
+                    <div class="sf-text">
+                        <span class="sf-title" data-i18n="fruits">Fruites</span>
+                        <span id="seasonalFruits" class="sf-value">--</span>
+                    </div>
+                </div>
+                <div class="sf-divider"></div>
+                <div class="sf-col">
+                    <span class="sf-emoji">🥬</span>
+                    <div class="sf-text">
+                        <span class="sf-title" data-i18n="vegetables">Verdures</span>
+                        <span id="seasonalVegetables" class="sf-value">--</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Saint | Saying Card -->
+            <div class="info-card saint-saying-info">
+                <div class="ss-col">
+                    <div class="ss-icon">⛪</div>
+                    <div class="ss-text">
+                        <span class="ss-title" data-i18n="saintsOfDay">Sants del dia</span>
+                        <span id="saintsNames" class="ss-value">--</span>
+                    </div>
+                </div>
+                <div class="ss-divider"></div>
+                <div class="ss-col">
+                    <div class="ss-icon">💬</div>
+                    <div class="ss-text">
+                        <span class="ss-title" data-i18n="sayingOfMonth">Refrany del mes</span>
+                        <span id="sayingText" class="ss-value ss-saying">--</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calendar Container -->
+        <main class="calendar-container">
+            <!-- Month View -->
+            <div id="monthView" class="calendar-view active">
+                <div class="calendar-grid month-grid">
+                    <div class="week-number-header" data-i18n="weekShort">Sm</div>
+                    <div class="day-header" data-i18n="mon">Dl</div>
+                    <div class="day-header" data-i18n="tue">Dt</div>
+                    <div class="day-header" data-i18n="wed">Dc</div>
+                    <div class="day-header" data-i18n="thu">Dj</div>
+                    <div class="day-header" data-i18n="fri">Dv</div>
+                    <div class="day-header weekend" data-i18n="sat">Ds</div>
+                    <div class="day-header weekend" data-i18n="sun">Dg</div>
+                    <div id="monthDays" class="month-days"></div>
+                </div>
+            </div>
+
+            <!-- Week View -->
+            <div id="weekView" class="calendar-view">
+                <div class="calendar-grid week-grid">
+                    <div class="week-number-header" data-i18n="weekShort">Sm</div>
+                    <div class="day-header" data-i18n="mon">Dl</div>
+                    <div class="day-header" data-i18n="tue">Dt</div>
+                    <div class="day-header" data-i18n="wed">Dc</div>
+                    <div class="day-header" data-i18n="thu">Dj</div>
+                    <div class="day-header" data-i18n="fri">Dv</div>
+                    <div class="day-header weekend" data-i18n="sat">Ds</div>
+                    <div class="day-header weekend" data-i18n="sun">Dg</div>
+                    <div id="weekDays" class="week-days"></div>
+                </div>
+            </div>
+
+            <!-- Year View -->
+            <div id="yearView" class="calendar-view">
+                <div id="yearGrid" class="year-grid"></div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <span id="locationInfo" class="location-info">Barcelona, Catalunya</span>
+            <span class="footer-separator">|</span>
+            <span id="creditsInfo" class="credits-info">© December 2025 Michael Mesa</span> 
+        </footer>
+    </div>
+
+    <script src="../JS/app.js"></script>
+</body>
+</html>
