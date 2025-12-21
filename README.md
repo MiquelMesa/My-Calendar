@@ -3,7 +3,7 @@
 
 ![My Calendar Screenshot](screenshot.png)
  
- v1.1.0 - new functionalities 
+ Release v1.1.0 with new functionalities 
 
 A beautiful, multilingual calendar/almanac with sun & moon data, saints, seasonal food, sayings, and multiple views. Built with HTML/CSS/JS and packaged for Windows via Electron.
 
@@ -93,4 +93,5 @@ MIT License (see `LICENSE`).
 Enjoy your calendar!
 
 Made with love by Mchael MR in Barcelona
+
 
