@@ -1,5 +1,7 @@
 
  **My Calendar**
+
+![My Calendar Screenshot](screenshot.png)
  
  v1.1.0 - new functionalities 
 
@@ -91,3 +93,4 @@ MIT License (see `LICENSE`).
 Enjoy your calendar!
 
 Made with love by Mchael MR in Barcelona
+
