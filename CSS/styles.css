@@ -3,6 +3,7 @@
    ======================================== */
 
 /* CSS Variables for Themes */
+
 :root {
     /* Light Theme */
     --bg-primary: #ffffff;
@@ -47,6 +48,7 @@
 }
 
 /* Reset */
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -63,6 +65,7 @@ body {
 }
 
 /* App Container */
+
 .app-container {
     max-width: 1400px;
     margin: 0 auto;
@@ -113,6 +116,7 @@ body {
 }
 
 /* Buttons */
+
 .btn {
     padding: 8px 16px;
     border: none;
@@ -172,6 +176,7 @@ body {
 }
 
 /* Select Controls */
+
 .settings {
     display: flex;
     gap: 10px;
@@ -205,6 +210,7 @@ body {
 }
 
 /* Info Panel */
+
 .info-panel {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -227,6 +233,7 @@ body {
 }
 
 /* Date Info Card */
+
 date-info {
     flex-direction: row;
     justify-content: space-between;
@@ -296,6 +303,7 @@ date-info {
 }
 
 /* Time Info Card - New Design */
+
 .time-info-new {
     flex-direction: row;
     align-items: stretch;
@@ -362,6 +370,7 @@ date-info {
 }
 
 /* Celestial Info Card (Sun + Moon Combined) */
+
 .celestial-info {
     flex-direction: column;
     align-items: stretch;
@@ -455,6 +464,7 @@ date-info {
 }
 
 /* Season | Fruits | Vegetables card */
+
 .season-food-info {
     flex-direction: row;
     align-items: stretch;
@@ -500,7 +510,7 @@ date-info {
 }
 
 .sf-title {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     color: var(--text-secondary);
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -508,7 +518,7 @@ date-info {
 }
 
 .sf-value {
-    font-size: 0.95rem;
+    font-size: 0.65rem;
     font-weight: 600;
     color: var(--text-primary);
     line-height: 1.3;
@@ -516,6 +526,7 @@ date-info {
 }
 
 /* Saint | Saying of the Month */
+
 .saint-saying-info {
     flex-direction: row;
     align-items: stretch;
@@ -551,7 +562,7 @@ date-info {
 }
 
 .ss-title {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     color: var(--text-secondary);
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -559,7 +570,7 @@ date-info {
 }
 
 .ss-value {
-    font-size: 0.95rem;
+    font-size: 0.65rem;
     font-weight: 600;
     color: var(--text-primary);
     line-height: 1.35;
@@ -572,6 +583,7 @@ date-info {
 }
 
 /* Calendar Container */
+
 .calendar-container {
     flex: 1;
     background-color: var(--bg-primary);
@@ -590,6 +602,7 @@ date-info {
 }
 
 /* Calendar Grid */
+
 .calendar-grid {
     display: grid;
     gap: 1px;
@@ -709,6 +722,7 @@ date-info {
 }
 
 /* Week View */
+
 .week-view-cell {
     min-height: 300px;
 }
@@ -725,6 +739,7 @@ date-info {
 }
 
 /* Year View */
+
 .year-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -826,6 +841,7 @@ date-info {
 }
 
 /* Footer */
+
 .footer {
     text-align: center;
     padding: 15px;
@@ -841,6 +857,7 @@ date-info {
 }
 
 /* Responsive */
+
 @media (max-width: 1200px) {
     .info-panel {
         grid-template-columns: repeat(2, 1fr);
