@@ -1,6 +1,8 @@
 
  **My Calendar**
 
+ Check the live version on "https://michaelprojects.org/MyCalendar/"
+
 ![My Calendar Screenshot](screenshot.png)
  
  Release v1.1.0 with new functionalities 
