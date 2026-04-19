@@ -3,9 +3,10 @@
 
  Check the live version on "https://michaelprojects.org/MyCalendar/"
 
-![Live - My Calendar Screenshot](live version.png)
+![Live Almanac Screenshot](live version.png)
 
  Inspired on the ancient almanacs
+ 
 
 ![My Calendar Screenshot](screenshot.png)
  
